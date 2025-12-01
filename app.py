@@ -80,7 +80,7 @@ def upload_json_to_mongodb(json_data: dict) -> int:
     else:
         documents = [json_data]
     
-    documents = documents[:100]
+    documents = documents[:50]
     
     # Clear existing data
     transactions_collection.delete_many({})
@@ -545,3 +545,4 @@ else:
                     import traceback
                     with st.expander("Error Details"):
                         st.code(traceback.format_exc())
+
