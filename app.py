@@ -154,7 +154,7 @@ def build_rag():
         retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
         
         llm = ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash",
+            model="gemini-2.0-flash",
             temperature=0.3,
             google_api_key=key,
             max_output_tokens=1000
@@ -355,4 +355,5 @@ else:
             
             except Exception as e:
                 st.error(f"❌ {e}")
+
 
