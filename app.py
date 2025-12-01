@@ -38,7 +38,7 @@ def get_mongodb():
         return None
 
 db = get_mongodb()
-if db:
+if db is not None:
     transactions_collection = db["transactions"]
     customers_collection = db["customers"]
     products_collection = db["products"]
@@ -355,3 +355,4 @@ else:
             
             except Exception as e:
                 st.error(f"❌ {e}")
+
