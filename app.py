@@ -7,7 +7,6 @@ from typing import List, Tuple, Dict, Any
 from pymongo import MongoClient
 from pymongo.errors import ConnectionFailure
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
-from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_community.vectorstores import FAISS
 from langchain.chains import ConversationalRetrievalChain
 from langchain.prompts import PromptTemplate
@@ -528,4 +527,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
