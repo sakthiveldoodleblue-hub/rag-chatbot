@@ -1,0 +1,12 @@
+streamlit
+python-dotenv
+pymongo
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters
+langchain-google-genai
+google-generativeai
+faiss-cpu
+tiktoken
+pydantic
