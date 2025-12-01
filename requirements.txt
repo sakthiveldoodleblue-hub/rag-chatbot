@@ -6,6 +6,6 @@ langchain-google-genai==1.0.10
 langchain-community==0.2.17
 faiss-cpu==1.8.0
 google-generativeai==0.7.2
-scikit-learn==1.3.2
-numpy==1.24.3
+scikit-learn==1.5.0
+numpy>=1.26.0
 tiktoken==0.5.2
