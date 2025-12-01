@@ -141,7 +141,7 @@ def build_rag():
             chunks = get_chunks()
             
             embeddings = GoogleGenerativeAIEmbeddings(
-                model="models/embedding-001",
+                model="models/gemini-embedding-001",
                 google_api_key=key,
             )
             
@@ -355,5 +355,6 @@ else:
             
             except Exception as e:
                 st.error(f"❌ {e}")
+
 
 
