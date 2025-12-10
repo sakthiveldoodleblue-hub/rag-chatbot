@@ -13,7 +13,7 @@ def get_mongodb_connection():
     logger.info("Attempting MongoDB connection...")
     
     try:
-        MONGODB_URI = st.secrets.get("MONGODB_URI")
+        MONGODB_URI = st.secrets.get("MONGODB_URI") or os.getenv("MONGODB_URI")
         DB_NAME = st.secrets.get("DB_NAME", "rag_chatbot_db")
         
         logger.debug(f"Database name: {DB_NAME}")
@@ -78,3 +78,4 @@ def init_collections():
     
     logger.info("✓ Collections initialized successfully")
     return collections
+
