@@ -36,6 +36,9 @@ class EmbeddingIntentClassifier:
                 "Customer demographics",
                 "Total number of customers",
                 "Customer list",
+                "Who is the Nth customer?",
+                "who is the Nnd customer?",
+                "who is the Nrd customer?",
                 "Show all customer names",
                 "Which customers bought the most?",
                 "Customer purchase patterns",
@@ -176,3 +179,4 @@ class EmbeddingIntentClassifier:
             print(f"Error during intent classification: {str(e)}")
 
             return "SEARCH_DB", 0.5
+
