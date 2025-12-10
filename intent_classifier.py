@@ -28,6 +28,7 @@ class EmbeddingIntentClassifier:
                 "What are our best sellers?",
                 
                 # Customer-related queries (general database queries)
+                "Which customer purchased"
                 "How many customers do we have?",
                 "List all customers",
                 "Show customer information",
@@ -173,4 +174,5 @@ class EmbeddingIntentClassifier:
         
         except Exception as e:
             print(f"Error during intent classification: {str(e)}")
+
             return "SEARCH_DB", 0.5
